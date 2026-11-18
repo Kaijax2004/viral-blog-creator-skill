@@ -11,18 +11,17 @@
 
 ## 文件结构
 
-`
+```
 .
 ├── SKILL.md                              # Skill 主入口
 ├── README.md                             # 项目说明
 ├── agents/
 │   └── openai.yaml                       # UI 元数据
-├── assets/                               # 可选资源
 └── references/
     ├── article-template.md               # 标准文章 Markdown 模板
     ├── title-formulas.md                 # 高点击率标题公式
     └── topic-selection-checklist.md      # 选题检查清单
-`
+```
 
 ## 适用场景
 
@@ -31,27 +30,40 @@
 - 标题优化
 - SEO 与 AI 搜索优化
 
+## 快速安装
+
+一条命令即可安装到 Codex：
+
+```bash
+# Codex
+git clone https://github.com/Kaijax2004/viral-blog-creator-skill.git ~/.codex/skills/viral-blog-creator-skill
+```
+
+如果使用 Cursor，安装到：
+
+```bash
+# Cursor
+git clone https://github.com/Kaijax2004/viral-blog-creator-skill.git ~/.cursor/skills/viral-blog-creator-skill
+```
+
+安装完成后，在对话中直接调用：
+
+```
+$viral-blog-creator
+```
+
+### 常用指令示例
+
+- `帮我为"Hugo 博客 SEO 优化"生成一篇博客大纲`
+- `给"AI 工作流自动化"这个选题起 5 个高点击标题`
+- `检查这篇文章的 SEO 和 AI 搜索优化点`
+- `把这段内容扩展成完整教程`
+
 ## 使用方法
 
-1. 将本仓库克隆到 Codex/Cursor 的 skills 目录：
-
-`ash
-# 以 Codex 为例
-cd ~/.codex/skills
-git clone https://github.com/Kaijax2004/viral-blog-creator-skill.git
-`
-
-2. 在 Codex 中调用：
-
-`	ext
--blog-creator
-`
-
-3. 示例请求：
-
-`	ext
-帮我为\"Hugo 博客 SEO 优化\"生成一篇博客大纲。
-`
+1. 将本仓库克隆到 Codex/Cursor 的 skills 目录
+2. 在 Codex 中调用 `$viral-blog-creator`
+3. 直接描述你的写作需求
 
 ## 创作流程
 
